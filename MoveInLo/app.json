@@ -1,0 +1,42 @@
+{
+  "expo": {
+    "scheme": "com.mobile.MoveInLo",
+    "web": {
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router",
+      "@react-native-google-signin/google-signin",
+      ["expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow $(PRODUCT_NAME) to use your location."
+        }
+      ],
+      [
+        "expo-calendar",
+        {
+          "calendarPermission": "MoveInLo needs to access your calendar"
+        }
+      ],
+      "expo-localization"
+    ],
+    "ios": {
+      "config": {
+        "usesNonExemptEncryption": false,
+        "googleMapsApiKey": "AIzaSyAvNO-dnwhqWYX0R9yXtKIZfjcqPQowwnc"
+      },
+      "bundleIdentifier": "com.ios.MoveInLo"
+    },
+    "android": {
+      "package": "com.android.MoveInLo"
+    },
+    "icon": "./src/assets/splash/LandingLogo.png",
+    "name": "MoveInLo",
+    "slug": "MoveInLo",
+    "splash": {
+      "image": "./src/assets/splash/LandingScreen.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#181C62"
+    }
+  }
+}
